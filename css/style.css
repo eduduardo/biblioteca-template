@@ -1,0 +1,253 @@
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(pt-sans.woff2) format('woff2');
+}
+
+/* reset css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "PT Sans", Helvetica, sans-serif;
+    color: #141412;
+    line-height: 1.5;
+	background: url('../img/swirl_pattern.png') fixed
+}
+
+#top {
+    background: #484848;
+    height: 35px;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.left { float: left }
+.right { float: right }
+.clear { clear: both }
+.padding { padding: 10px 0 }
+
+a {
+    text-decoration: none;
+    color: #E05D22;
+}
+
+ul li { list-style: none }
+p {  margin: 10px 0 }
+
+.top { padding: 77px 0 }
+
+.logo {
+    font-size: 62px;
+    color: #7794FA;
+}
+
+.button {
+    background: #fdab50;
+    border-width: medium medium 3px;
+    border-style: none none solid;
+    border-color: #d59043;
+    border-radius: 2px;
+    color: #FFF;
+    display: inline-block;
+    padding: 11px 24px 10px;
+    text-decoration: none;
+	cursor: pointer
+}
+
+.white {
+    background: #eaeaea;
+    color: #000;
+    border-color: #ccc;
+}
+
+label, input, select, textarea {
+    display:block;
+    margin: 10px 0;
+}
+
+input[type=text],  input[type=email], textarea {
+    width: 145px;
+    outline: 0 none;
+    line-height: 18px;
+    margin: 5px 0 0;
+    padding: 4px 5px;
+    background-color: #FFF;
+    border: 1px solid #E0E0E0;
+    color: #777;
+    font-size: 12px;
+    max-width: 300px;
+    height: 31px;
+    box-sizing: border-box;
+}
+
+.search input[type=submit] {
+    float: right;
+    width: 31px;
+    height: 31px;
+    padding: 0;
+    cursor: pointer;
+    background: #F7F7F7 url(../img/search.png) no-repeat scroll 9px 9px;
+    outline: medium none;
+    border: 1px solid #E0E0E0;
+    font-size: 11px;
+    color: #666;
+    font-family: inherit;
+    box-sizing: border-box;
+    box-shadow: none;
+    margin-top: 5px;
+}
+
+.search input[type=text] {
+	display:inline;
+}
+
+textarea {
+    height: 100%;
+    box-sizing: none;
+}
+
+header {
+    background: url(../img/bookshelf.png) fixed
+}
+
+nav {
+    background: #fdab50;
+    padding: 10px 0;
+    border-bottom: 2px solid #d59043;
+}
+
+nav ul li {
+    display: inline;
+    padding-right: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    padding: 11px 15px;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    background: #EA9D48;
+    border-bottom: 2px solid #AD7436;
+}
+
+.search {
+    float: right;
+    margin: -30px 0;
+}
+
+.livros li img {
+    width: 200px;
+    height: 290px;
+}
+
+.livros li {
+    display: inline-block;
+    padding: 15px;
+}
+
+.livros h3 {
+    width: 200px;
+}
+
+.editoras li img {
+    width: 75px;
+    height: 75px;
+}
+
+.editoras li {
+    display: inline-block;
+    padding: 15px;
+}
+
+.imghover {
+    position: absolute;
+    width: 200px;
+    height: 290px;
+    transition: 0.3s all ease;
+}
+
+.imghover:hover {
+    background: rgba(0,0,0,0.4);
+}
+
+.info {
+    background: #7794FA;
+    padding: 30px 0 50px;
+    border-bottom: 4px solid #5C6895;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.info h1 {
+    font-size: 30px;
+}
+
+.info p {
+    font-size: 20px;
+}
+
+.info img {
+    width: 350px;
+    float: left;
+    padding-right: 50px;
+}
+
+.info .button {
+    text-shadow:none;
+}
+
+#livro img {
+    padding-right: 30px;
+}
+
+#livro ul {
+    margin: 10px 0;
+}
+
+#sobre img {
+    padding: 0 10px;
+}
+
+#sobre ul li{
+    display: inline-block
+}
+
+#livro .button {
+    margin: 30px 0;
+    font-size: 24px;
+}
+
+#contato input[type=text],  input[type=email],textarea {
+    width: 100%;
+    resize:none;
+}
+
+footer {
+    color: #fff;
+    padding: 10px 0;
+    background: #332d2e;
+    font-size: 14px;
+    height: 25px;
+}
